@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  padding: 20px 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(38.25, 38.25, 38.25);
+}
+header .headerToggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+header .headerToggle:hover {
+  color: rgb(254.1341463415, 183.1341463415, 42.8658536585);
+}
+
+main {
+  display: flex;
+  padding: 20px 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .container {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .container .logoCD {
+  width: 150px;
+}
+main .container .linkStore {
+  width: 340px;
+  height: 80px;
+  background-color: #f5a301;
+  color: #f4f4f4;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 400;
+}
+main .container .linkStore:hover {
+  background-color: rgb(219.6036585366, 146.1036585366, 0.8963414634);
+}
+main .container .linkStore img {
+  width: 65px;
+}
+
+footer {
+  display: flex;
+  padding: 20px 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(38.25, 38.25, 38.25);
+  margin-bottom: 0;
+  font-size: 12px;
+  padding: 15px 25px;
+}/*# sourceMappingURL=style.css.map */

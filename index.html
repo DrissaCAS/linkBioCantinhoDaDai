@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <!-- Link Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Title of the website -->
     <title>Cantinho da Dai</title>
 </head>
 <body>
     <header>
-        <img src="./src/img/logoCD/logoCD500x500.png" alt="Logo do Cantinho da Dai" width="100" height="100">
-    </header>
+        <div class="headerToggle">
+            <i id="toggleMenu" class="bi bi-list"></i>
+        </div>
 
+        
+        <div class="headerToggle">
+            <i id="toggleTheme" class="bi bi-cloud-sun"></i>
+        </div>
+    </header>
+    
     <main>
 
         <div class="container">
+            <img class="logoCD" src="./src/img/logoCD/logoCD500x500.png" alt="Logo do Cantinho da Dai">
+
+            <h1 id="title-main">Bem-vindo ao Cantinho da Dai!</h1>
+
+        </div>
+        
+         <div class="container">
             <a href="http://www.natura.com.br/c/promocao-exclusiva?c_natg_gender_filter=infantil&consultoria=adailzacunha"  target="_blank" class="linkStore" rel="noopener noreferrer">
                 <img src="./src/img/logosBeleza/logoNatura.png" alt="Logomarca da empresa Natura">
                 <h4 class="textButton">Compre produtos da Natura</h4>
@@ -35,14 +52,7 @@
                 <h4 class="textButton">Compre produtos da Eudora</h4>
             </a>
         </div>
-        <div class="container">
-            <a href="https://mercadolivre.com/sec/2SyEJGb"  target="_blank" class="linkStore" rel="noopener noreferrer">
-                <img src="./src/img/logosBeleza/logoAvon.png" alt="Logomarca da empresa Avon">
-                <h4 class="textButton">Compre produtos da Avon</h4>
-            </a>
-        </div>
-
-        
+                
 
     </main>
 

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex-center {
+    display: flex;
+    padding: 20px 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+body {
+    background-color: $bg;
+    font-family: $font-family;
+    color: $text-color;
+}
+
+header {
+    @include flex-center;
+    background-color: darken($bg, 5%);
+    
+
+    .headerToggle {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .headerToggle:hover {
+        color: lighten($primary-color, 10%);
+    }
+}
+
+main {
+    @include flex-center;
+    flex-direction: column;
+
+    .container {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        gap: 2rem;
+
+        .logoCD {
+            width: 150px;
+        }
+
+        .linkStore {
+            width: 340px;
+            height: 80px;
+            background-color: $primary-color;
+            color: $text-color;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+            font-weight: 400;
+
+            &:hover {
+                background-color: darken($primary-color, 5%);
+            }
+
+            img {
+                width: 65px;
+            }
+        }
+        
+        
+    }
+}
+
+footer {
+    @include flex-center;
+    background-color: darken($bg, 5%);
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 15px 25px;
+}
