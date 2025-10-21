@@ -36,9 +36,11 @@ main {
   flex-direction: column;
 }
 main .container {
+  display: flex;
+  align-items: center;
   margin: 10px 0;
   width: 100%;
-  max-width: 600px;
+  max-width: 395px;
   flex-direction: column;
   gap: 2rem;
 }
@@ -47,25 +49,42 @@ main .container .logoCD {
 }
 main .container .linkStore {
   width: 340px;
-  height: 80px;
+  height: 50px;
   background-color: #f5a301;
-  color: #f4f4f4;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 10px 25px;
   border-radius: 50px;
-  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   transition: background-color 0.3s ease;
-  font-weight: 400;
 }
 main .container .linkStore:hover {
   background-color: rgb(219.6036585366, 146.1036585366, 0.8963414634);
 }
 main .container .linkStore img {
-  width: 65px;
+  width: 35px;
+}
+main .container .linkStore .textButton {
+  width: 70%;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+main .redesSociais {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+main .redesSociais a {
+  color: #f4f4f4;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+main .redesSociais a:hover {
+  color: #f5a301;
 }
 
 footer {
@@ -74,6 +93,7 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  display: block;
   background-color: rgb(38.25, 38.25, 38.25);
   margin-bottom: 0;
   font-size: 12px;

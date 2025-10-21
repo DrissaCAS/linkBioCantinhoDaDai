@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+@mixin link-style {
+    text-decoration: none;
+    color: $text-color;
+}
+
 @mixin flex-center {
     display: flex;
     padding: 20px 25px;
@@ -41,11 +46,13 @@ header {
 main {
     @include flex-center;
     flex-direction: column;
-
+    
     .container {
+        display: flex;
+        align-items: center;
         margin: 10px 0;
         width: 100%;
-        max-width: 600px;
+        max-width: 395px;
         flex-direction: column;
         gap: 2rem;
 
@@ -55,35 +62,57 @@ main {
 
         .linkStore {
             width: 340px;
-            height: 80px;
+            height: 50px;
             background-color: $primary-color;
-            color: $text-color;
             text-decoration: none;
-            padding: 15px 25px;
+            padding: 10px 25px;
             border-radius: 50px;
-            font-size: 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 10px;
             transition: background-color 0.3s ease;
-            font-weight: 400;
 
             &:hover {
                 background-color: darken($primary-color, 5%);
             }
 
             img {
-                width: 65px;
+                width: 35px;
+            }
+
+            .textButton {
+                width: 70%;
+                text-align: start;
+                font-size: 16px;
+                font-weight: 600;
+                color: $text-color;
             }
         }
         
         
     }
+
+    .redesSociais {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $text-color;
+            font-size: 24px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 footer {
     @include flex-center;
+    display: block;
     background-color: darken($bg, 5%);
     margin-bottom: 0;
     font-size: 12px;
