@@ -26,6 +26,8 @@ body {
     background-color: $bg;
     font-family: $font-family;
     color: $text-color;
+    min-height: 100vh;
+    position: relative;
 }
 
 header {
@@ -114,7 +116,23 @@ footer {
     @include flex-center;
     display: block;
     background-color: darken($bg, 5%);
-    margin-bottom: 0;
+    align-items: end;
     font-size: 12px;
     padding: 15px 25px;
+    margin-top: 25px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
 }
